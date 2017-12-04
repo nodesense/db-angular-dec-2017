@@ -1,26 +1,41 @@
 <div>
 
-  <a routerLink="/" > Home </a>
+  <a routerLink="/" 
+     routerLinkActive="success"
+     [routerLinkActiveOptions]="{exact:true}"
+     class="button" > Home </a>
 
-  <a routerLink="/products" > Products </a>
+  <a routerLink="/products"  
+    routerLinkActive="success"
+    [routerLinkActiveOptions]="{exact:true}"
+     class="button"> Products </a>
 
   
-  <a routerLink="/contact/pune" > Contact Pune </a>
+     <a routerLink="/cart" 
+        routerLinkActive="success"
+        [routerLinkActiveOptions]="{exact:true}"
+     class="button" > Cart [  {{cartCount}}  ] </a>
+      
+      <button >
 
-  <a [routerLink]="['/contact', 'blr', {time:10,endTime: 5}]" > Contact BLR </a>
+        Total {{amount | currency:"INR":true}}
+
+      </button>
+
+ 
+  <a [routerLink]="['/contact', 'pune', {time:10,endTime: 5}]"
+    routerLinkActive="success"
+    [routerLinkActiveOptions]="{exact:true}"
+     class="button"> Contact </a>
   
-  <a routerLink="/about" > About </a>
+  <a routerLink="/about" 
+  routerLinkActive="success"
+  [routerLinkActiveOptions]="{exact:true}"
+     class="button"> About </a>
 
 
-  <a routerLink="/todo" > Todo </a>
 
-  <a routerLink="/cart" class="button" > Cart [  {{cartCount}}  ] </a>
-  
-  <button >
 
-    Total {{amount | currency:"INR":true}}
-
-  </button>
   <button (click)="emptyCart()">
     Empty
   </button>
