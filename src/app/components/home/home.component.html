@@ -1,0 +1,17 @@
+<h2>Home</h2>
+
+<p>Counter: {{counter}}</p>
+
+
+<p>Counter * 10: {{counter * 10}}</p>
+
+<button on-click="incr()">
+  +1
+</button>
+
+
+<app-like [count]="counter" 
+          (countChange)="valueChanged($event)"
+
+>
+</app-like>

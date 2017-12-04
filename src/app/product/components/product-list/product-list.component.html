@@ -1,0 +1,26 @@
+<h2>Product List</h2>
+
+<button (click)="addItemToCart(null)">
+  Add Item
+</button>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Year</th>
+    <th>Actions</th>
+  </tr>
+
+  <tr *ngFor="let product of products">
+    <td>{{product.name | uppercase}}</td>
+    <td>{{product.price | currency:"INR":true}}</td>
+    <td>{{product.year}}</td>
+    <td> 
+        <button (click)="addItemToCart(product)">
+          +Cart
+        </button>
+    </td>
+  </tr>
+
+</table>

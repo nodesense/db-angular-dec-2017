@@ -1,0 +1,20 @@
+<div 
+  [ngClass]="{highlightColor: highlight}"
+  (mouseenter)="highlight=true"
+  (mouseleave)="highlight=false"
+  >
+
+  <hr />
+
+
+  <span>Likes {{counter}}</span>
+
+  <button (click)="incr()">
+    Incr
+  </button>
+  
+
+  <p>Copyrights@{{year}}, {{company}}</p>
+
+  <p>Address: {{address?.city}}</p> 
+</div>

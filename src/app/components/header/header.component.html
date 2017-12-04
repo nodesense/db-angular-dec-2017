@@ -1,0 +1,28 @@
+<div>
+
+  <a routerLink="/" > Home </a>
+
+  <a routerLink="/products" > Products </a>
+
+  
+  <a routerLink="/contact/pune" > Contact Pune </a>
+
+  <a [routerLink]="['/contact', 'blr', {time:10,endTime: 5}]" > Contact BLR </a>
+  
+  <a routerLink="/about" > About </a>
+
+
+  <a routerLink="/todo" > Todo </a>
+
+  <a routerLink="/cart" class="button" > Cart [  {{cartCount}}  ] </a>
+  
+  <button >
+
+    Total {{amount | currency:"INR":true}}
+
+  </button>
+  <button (click)="emptyCart()">
+    Empty
+  </button>
+
+</div>

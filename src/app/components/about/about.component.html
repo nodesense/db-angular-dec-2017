@@ -1,0 +1,43 @@
+<h2>About</h2>
+
+<p> {{address?.city}}</p>
+
+
+<!-- 
+<input name="name" 
+       type="text"
+
+       [(ngModel)]="memberName"
+
+/> -->
+
+
+<input name="name" 
+type="text"
+
+[ngModel]="memberName"
+
+(ngModelChange)="memberName=$event"
+/>
+
+<button (click)="add()">
+  Add
+</button>
+
+<button (click)="remove()">
+    Remove
+</button>
+
+<button (click)="show = !show">
+  {{ show ? "Hide" : "Show" }}
+</button>
+  
+<ul *ngIf="show == true else noMembers">
+  <li *ngFor="let name of members">
+    {{name}}
+  </li>
+</ul>
+
+<ng-template #noMembers>
+  <p>{{message}}</p> 
+</ng-template>

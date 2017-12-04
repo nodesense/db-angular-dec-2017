@@ -1,0 +1,15 @@
+
+1. NG RX (Advanced) [Day 1]
+2. D3 (Advanced) [ Day 2 half day]
+3. Ag Grid (Enterprise version - Advanced) [Day 3 - 2 hours]
+
+(Day 2 & 3)
+
+4. Angular Routing guards [ Day 2]
+5. Angular Reactive Forms and Custom form Validations. [Day 2]
+6. Angular Authentication with httpclient and inteceptors [Day 3]
+7. Angular Pipes and Directives [Day 2] -  2 hours 
+
+8. Karma/Jasmine (Unit Testing) [Day 3] 2 hours
+9. Protractor (e2e testing) [Day 3] 1 hour
+ 

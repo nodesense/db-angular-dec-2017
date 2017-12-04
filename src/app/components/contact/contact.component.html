@@ -1,0 +1,33 @@
+<h2>Contact - {{city}}</h2>
+
+<app-counter>
+
+</app-counter>
+
+
+<hr />
+
+<input #text1 />
+
+<p #p1>
+  
+</p>
+
+<button 
+    (click)="p1.textContent=text1.value" >
+  Set
+</button>
+
+
+<p>Contact Likes {{contactLikes}}</p>
+<!-- 
+<app-like [(count)]="contactLikes">
+
+</app-like> -->
+
+
+<app-like [count]="contactLikes"
+          (countChange)="contactLikes=$event"
+>
+  
+</app-like>
